@@ -696,9 +696,9 @@
       "sourcePath": "README.md",
       "sourceRevision": "ec57688e48f8ad12e60785173956d50386fee6b8",
       "sourceSha256": "91159c3f5d7b68929fc97e33be0a60210a2b20ab8c80c66e7b3b6268cbaa478a",
-      "sha256": "473fdedbda2edded0ef68e491c3e33b71f36e11d72324bdbc7cedb284f5d36c2",
-      "size": 1250,
-      "transformation": "none; owner-authorized Apache-2.0 packaging/Python pin/documentation revision; original source hash retained",
+      "sha256": "bb87138b8a3fc0a98b8e3333eae642e68925bcc6f5c7f77883746d55ee66d432",
+      "size": 1270,
+      "transformation": "owner-authored canonical packaging README; corrected public website backlink; original source revision and hash retained",
       "role": "required"
     },
     {
@@ -1016,10 +1016,10 @@
       "sourcePath": "README.md",
       "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
       "sourceSha256": "c703ebf558d73fbdb5d04ff59c42331d616fae9454c81c0640706d802eaffabb",
-      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "transformation": "owner-authored canonical packaging README; corrected public website backlink; original source revision and hash retained",
       "role": "required",
-      "sha256": "c703ebf558d73fbdb5d04ff59c42331d616fae9454c81c0640706d802eaffabb",
-      "size": 1328
+      "sha256": "043a8bb4af53b98b04e8360fe9d25c623129a6f4de6b27a93b8f54058a6f423d",
+      "size": 1348
     },
     {
       "path": "templates/mdaai-2/licenses/legacy-MIT.txt",

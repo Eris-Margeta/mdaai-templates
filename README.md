@@ -12,6 +12,8 @@ For any agent system, point its entry instructions to the nearest AGENTS.md. App
 
 Reviewed, versioned governance-file bundles by **Eris Margeta Kurdali**: **MDAAI 1.0 first-generation family** and **MDAAI 2.0 portable core**. Private source projects and their Git histories are not published here.
 
+**[Browse the templates directory](https://www.mdaai.internet.technology/templates/)** · [Protocol documentation](https://www.mdaai.internet.technology/)
+
 ## Protocol ≠ template
 
 The **protocol** is the method and rules governing work, evidence, decisions and improvement. A **template** is a particular set of files implementing those rules in a repository. Templates can evolve through reviewed changes, manually or with an assistant, under the applicable protocol. Catalog updates do not authorize rewriting downstream repositories.

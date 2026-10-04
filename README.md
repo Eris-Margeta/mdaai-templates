@@ -73,7 +73,7 @@ Manifest pattern: `https://raw.githubusercontent.com/Eris-Margeta/mdaai-template
 
 ## Verify and contribute
 
-Python 3.11+, standard library only:
+Development/CI Python 3.13.14 (from `.python-version`); minimum validator compatibility Python 3.11+, standard library only:
 
 ```sh
 python3 scripts/validate_catalog.py
@@ -81,3 +81,9 @@ python3 -m unittest discover -s tests -v
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Changes are proposals until reviewed and adopted; publication alone does not supersede existing repository authority.
+
+## Canonical repositories and aggregate admission
+
+The canonical templates are https://github.com/Eris-Margeta/mdaai-template-1 and https://github.com/Eris-Margeta/mdaai-template-2 . This repository remains the unified catalog and compatibility mirror, not a competing source owner. Each `source` pins a public canonical repository commit; `originalSource` preserves historical provenance. Existing schemaVersion 1 paths remain stable. Both distributed templates and original catalog packaging use Apache-2.0, with inherited MIT notices preserved.
+
+Registry additions go through a reviewed pull request before the website updates its catalog pin. No website hardcoded parallel feed is necessary.

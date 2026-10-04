@@ -52,6 +52,16 @@
       "role": "required"
     },
     {
+      "path": "templates/mdaai-1/.python-version",
+      "sourcePath": ".python-version",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "f8faecf2505680716c6279bf2cdec3d5a5ba2ba852f0d7df45d51ac1ce8d9ade",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "f8faecf2505680716c6279bf2cdec3d5a5ba2ba852f0d7df45d51ac1ce8d9ade",
+      "size": 8
+    },
+    {
       "path": "templates/mdaai-1/.template/agent-rules.yaml",
       "sourcePath": ".template/agent-rules.yaml",
       "sourceRevision": "ec57688e48f8ad12e60785173956d50386fee6b8",
@@ -136,9 +146,9 @@
       "sourcePath": "CONTRIBUTING.md",
       "sourceRevision": "ec57688e48f8ad12e60785173956d50386fee6b8",
       "sourceSha256": "522e364d883e132ab096088ac02c5ed7a6b3db226eb95426998830e19c2309ba",
-      "sha256": "522e364d883e132ab096088ac02c5ed7a6b3db226eb95426998830e19c2309ba",
-      "size": 2704,
-      "transformation": "none",
+      "sha256": "363bab5ce3c59c7d19d5f39b7a972dff4fe9745a0ed49f2a7874cc69684ff0f1",
+      "size": 283,
+      "transformation": "none; owner-authorized Apache-2.0 packaging/Python pin/documentation revision; original source hash retained",
       "role": "required"
     },
     {
@@ -156,10 +166,20 @@
       "sourcePath": "LICENSE",
       "sourceRevision": "ec57688e48f8ad12e60785173956d50386fee6b8",
       "sourceSha256": "dd02548f1066030908ac45ec7252de62ac84ceeb87f56ef677f6d5772a672a82",
-      "sha256": "dd02548f1066030908ac45ec7252de62ac84ceeb87f56ef677f6d5772a672a82",
-      "size": 1070,
-      "transformation": "none",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358,
+      "transformation": "none; owner-authorized Apache-2.0 packaging/Python pin/documentation revision; original source hash retained",
       "role": "required"
+    },
+    {
+      "path": "templates/mdaai-1/NOTICE",
+      "sourcePath": "NOTICE",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "f14ad062071a1f15472d715a3e2dcaf8942a518ce08faa8af6a9b23744cc519f",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "f14ad062071a1f15472d715a3e2dcaf8942a518ce08faa8af6a9b23744cc519f",
+      "size": 323
     },
     {
       "path": "templates/mdaai-1/PROJECT-INTERNAL/AGENTS.md",
@@ -676,10 +696,20 @@
       "sourcePath": "README.md",
       "sourceRevision": "ec57688e48f8ad12e60785173956d50386fee6b8",
       "sourceSha256": "91159c3f5d7b68929fc97e33be0a60210a2b20ab8c80c66e7b3b6268cbaa478a",
-      "sha256": "91159c3f5d7b68929fc97e33be0a60210a2b20ab8c80c66e7b3b6268cbaa478a",
-      "size": 8504,
-      "transformation": "none",
+      "sha256": "473fdedbda2edded0ef68e491c3e33b71f36e11d72324bdbc7cedb284f5d36c2",
+      "size": 1250,
+      "transformation": "none; owner-authorized Apache-2.0 packaging/Python pin/documentation revision; original source hash retained",
       "role": "required"
+    },
+    {
+      "path": "templates/mdaai-1/README.source.md",
+      "sourcePath": "README.source.md",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "91159c3f5d7b68929fc97e33be0a60210a2b20ab8c80c66e7b3b6268cbaa478a",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "91159c3f5d7b68929fc97e33be0a60210a2b20ab8c80c66e7b3b6268cbaa478a",
+      "size": 8504
     },
     {
       "path": "templates/mdaai-1/SECURITY.md",
@@ -822,13 +852,23 @@
       "role": "required"
     },
     {
+      "path": "templates/mdaai-1/licenses/legacy-MIT.txt",
+      "sourcePath": "licenses/legacy-MIT.txt",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "dd02548f1066030908ac45ec7252de62ac84ceeb87f56ef677f6d5772a672a82",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "dd02548f1066030908ac45ec7252de62ac84ceeb87f56ef677f6d5772a672a82",
+      "size": 1070
+    },
+    {
       "path": "templates/mdaai-1/project-meta.yaml",
       "sourcePath": "project-meta.yaml",
       "sourceRevision": "ec57688e48f8ad12e60785173956d50386fee6b8",
       "sourceSha256": "e39705526ca12d5ecf8cb70654840cfed739a69bd5d062dae3bdaf81535eb467",
-      "sha256": "e39705526ca12d5ecf8cb70654840cfed739a69bd5d062dae3bdaf81535eb467",
-      "size": 1820,
-      "transformation": "none",
+      "sha256": "f34bf31eec1d37b421706bce27a6dc2ec753a4ee78ab6e6f7c7bb9d6462871f2",
+      "size": 1827,
+      "transformation": "none; owner-authorized active Apache-2.0 default metadata",
       "role": "required"
     },
     {
@@ -840,6 +880,16 @@
       "size": 1570,
       "transformation": "none",
       "role": "optional"
+    },
+    {
+      "path": "templates/mdaai-2/.python-version",
+      "sourcePath": ".python-version",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "f8faecf2505680716c6279bf2cdec3d5a5ba2ba852f0d7df45d51ac1ce8d9ade",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "f8faecf2505680716c6279bf2cdec3d5a5ba2ba852f0d7df45d51ac1ce8d9ade",
+      "size": 8
     },
     {
       "path": "templates/mdaai-2/AGENTS.md",
@@ -860,6 +910,36 @@
       "size": 126,
       "transformation": "none",
       "role": "optional"
+    },
+    {
+      "path": "templates/mdaai-2/CONTRIBUTING.md",
+      "sourcePath": "CONTRIBUTING.md",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "363bab5ce3c59c7d19d5f39b7a972dff4fe9745a0ed49f2a7874cc69684ff0f1",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "363bab5ce3c59c7d19d5f39b7a972dff4fe9745a0ed49f2a7874cc69684ff0f1",
+      "size": 283
+    },
+    {
+      "path": "templates/mdaai-2/LICENSE",
+      "sourcePath": "LICENSE",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "templates/mdaai-2/NOTICE",
+      "sourcePath": "NOTICE",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "f14ad062071a1f15472d715a3e2dcaf8942a518ce08faa8af6a9b23744cc519f",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "f14ad062071a1f15472d715a3e2dcaf8942a518ce08faa8af6a9b23744cc519f",
+      "size": 323
     },
     {
       "path": "templates/mdaai-2/PROJECT-INTERNAL/GOVERNANCE/AUTHORITY.md",
@@ -930,6 +1010,26 @@
       "size": 63,
       "transformation": "Fresh registry per source docs/ADOPTION.md; source project history omitted; choose project prefix before use.",
       "role": "required"
+    },
+    {
+      "path": "templates/mdaai-2/README.md",
+      "sourcePath": "README.md",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "c703ebf558d73fbdb5d04ff59c42331d616fae9454c81c0640706d802eaffabb",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "c703ebf558d73fbdb5d04ff59c42331d616fae9454c81c0640706d802eaffabb",
+      "size": 1328
+    },
+    {
+      "path": "templates/mdaai-2/licenses/legacy-MIT.txt",
+      "sourcePath": "licenses/legacy-MIT.txt",
+      "sourceRevision": "4ad670f9402e8699ed969ae719188196ef089aae",
+      "sourceSha256": "dd02548f1066030908ac45ec7252de62ac84ceeb87f56ef677f6d5772a672a82",
+      "transformation": "owner-authored packaging addition; not original upstream bytes",
+      "role": "required",
+      "sha256": "dd02548f1066030908ac45ec7252de62ac84ceeb87f56ef677f6d5772a672a82",
+      "size": 1070
     }
   ],
   "excluded": [

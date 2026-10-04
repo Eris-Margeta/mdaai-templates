@@ -11,3 +11,10 @@
 !/tests/
 !/.github/
 __pycache__/
+
+!/.python-version
+!/LICENSE
+!/NOTICE
+!/LICENSE-NOTICES.md
+!/licenses/
+!/licenses/**

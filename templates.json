@@ -5,15 +5,15 @@
   "templates": [
     {
       "id": "mdaai-1",
-      "title": "MDAAI 1.0 — first-generation family",
+      "title": "MDAAI 1.0 \u2014 first-generation family",
       "description": "Work Orders, lifecycle protocols, checkpoints, schemas and blank project scaffolds.",
       "templateVersion": "1.0.0+ec57688",
       "protocol": {
         "identity": "First-generation MDAAI; AI-INSTRUCTIONS subject 1.7"
       },
       "source": {
-        "repository": "Eris-Margeta/monorepo-template",
-        "revision": "ec57688e48f8ad12e60785173956d50386fee6b8"
+        "repository": "Eris-Margeta/mdaai-template-1",
+        "revision": "f9351ffbb8bb8b271b23ecc3ad5cee17f5b33825"
       },
       "status": "review-before-adoption",
       "complete": false,
@@ -47,6 +47,12 @@
           "path": "templates/mdaai-1/.gitignore",
           "sha256": "5e2d041572146c3983c96fa8426dbe7a1367025f0df53f32bf5616b3520c794e",
           "size": 3442,
+          "role": "required"
+        },
+        {
+          "path": "templates/mdaai-1/.python-version",
+          "sha256": "f8faecf2505680716c6279bf2cdec3d5a5ba2ba852f0d7df45d51ac1ce8d9ade",
+          "size": 8,
           "role": "required"
         },
         {
@@ -99,8 +105,8 @@
         },
         {
           "path": "templates/mdaai-1/CONTRIBUTING.md",
-          "sha256": "522e364d883e132ab096088ac02c5ed7a6b3db226eb95426998830e19c2309ba",
-          "size": 2704,
+          "sha256": "363bab5ce3c59c7d19d5f39b7a972dff4fe9745a0ed49f2a7874cc69684ff0f1",
+          "size": 283,
           "role": "required"
         },
         {
@@ -111,8 +117,14 @@
         },
         {
           "path": "templates/mdaai-1/LICENSE",
-          "sha256": "dd02548f1066030908ac45ec7252de62ac84ceeb87f56ef677f6d5772a672a82",
-          "size": 1070,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358,
+          "role": "required"
+        },
+        {
+          "path": "templates/mdaai-1/NOTICE",
+          "sha256": "f14ad062071a1f15472d715a3e2dcaf8942a518ce08faa8af6a9b23744cc519f",
+          "size": 323,
           "role": "required"
         },
         {
@@ -423,6 +435,12 @@
         },
         {
           "path": "templates/mdaai-1/README.md",
+          "sha256": "473fdedbda2edded0ef68e491c3e33b71f36e11d72324bdbc7cedb284f5d36c2",
+          "size": 1250,
+          "role": "required"
+        },
+        {
+          "path": "templates/mdaai-1/README.source.md",
           "sha256": "91159c3f5d7b68929fc97e33be0a60210a2b20ab8c80c66e7b3b6268cbaa478a",
           "size": 8504,
           "role": "required"
@@ -512,9 +530,15 @@
           "role": "required"
         },
         {
+          "path": "templates/mdaai-1/licenses/legacy-MIT.txt",
+          "sha256": "dd02548f1066030908ac45ec7252de62ac84ceeb87f56ef677f6d5772a672a82",
+          "size": 1070,
+          "role": "required"
+        },
+        {
           "path": "templates/mdaai-1/project-meta.yaml",
-          "sha256": "e39705526ca12d5ecf8cb70654840cfed739a69bd5d062dae3bdaf81535eb467",
-          "size": 1820,
+          "sha256": "f34bf31eec1d37b421706bce27a6dc2ec753a4ee78ab6e6f7c7bb9d6462871f2",
+          "size": 1827,
           "role": "required"
         },
         {
@@ -523,7 +547,13 @@
           "size": 1570,
           "role": "optional"
         }
-      ]
+      ],
+      "originalSource": {
+        "repository": "Eris-Margeta/monorepo-template",
+        "revision": "ec57688e48f8ad12e60785173956d50386fee6b8"
+      },
+      "license": "Apache-2.0",
+      "pythonVersion": "3.13.14"
     },
     {
       "id": "mdaai-2",
@@ -534,13 +564,19 @@
         "identity": "MDAAI 2.0 portable operating contract"
       },
       "source": {
-        "repository": "Eris-Margeta/MDAAI-2-0",
-        "revision": "5395006954bf298db652679b934ea5755ec17b1c"
+        "repository": "Eris-Margeta/mdaai-template-2",
+        "revision": "8af6513dd68091336d137b0669300bb9862e6fd1"
       },
       "status": "review-before-adoption",
       "complete": false,
       "entrypoint": "templates/mdaai-2/AGENTS.md",
       "files": [
+        {
+          "path": "templates/mdaai-2/.python-version",
+          "sha256": "f8faecf2505680716c6279bf2cdec3d5a5ba2ba852f0d7df45d51ac1ce8d9ade",
+          "size": 8,
+          "role": "required"
+        },
         {
           "path": "templates/mdaai-2/AGENTS.md",
           "sha256": "bf75a08e55483da5c3bb517947daf219e6859ce6fd977c99139a4e4704bb6022",
@@ -552,6 +588,24 @@
           "sha256": "d830177eb8e9b6cb9d77ca23cc1457e03361ebee774988d3b1b554faa4e02553",
           "size": 126,
           "role": "optional"
+        },
+        {
+          "path": "templates/mdaai-2/CONTRIBUTING.md",
+          "sha256": "363bab5ce3c59c7d19d5f39b7a972dff4fe9745a0ed49f2a7874cc69684ff0f1",
+          "size": 283,
+          "role": "required"
+        },
+        {
+          "path": "templates/mdaai-2/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358,
+          "role": "required"
+        },
+        {
+          "path": "templates/mdaai-2/NOTICE",
+          "sha256": "f14ad062071a1f15472d715a3e2dcaf8942a518ce08faa8af6a9b23744cc519f",
+          "size": 323,
+          "role": "required"
         },
         {
           "path": "templates/mdaai-2/PROJECT-INTERNAL/GOVERNANCE/AUTHORITY.md",
@@ -594,8 +648,26 @@
           "sha256": "64c3825fee3bcbe33f7cffcd1e136ac77967a15947a2228c822bb0859cf4bc95",
           "size": 63,
           "role": "required"
+        },
+        {
+          "path": "templates/mdaai-2/README.md",
+          "sha256": "c703ebf558d73fbdb5d04ff59c42331d616fae9454c81c0640706d802eaffabb",
+          "size": 1328,
+          "role": "required"
+        },
+        {
+          "path": "templates/mdaai-2/licenses/legacy-MIT.txt",
+          "sha256": "dd02548f1066030908ac45ec7252de62ac84ceeb87f56ef677f6d5772a672a82",
+          "size": 1070,
+          "role": "required"
         }
-      ]
+      ],
+      "originalSource": {
+        "repository": "Eris-Margeta/MDAAI-2-0",
+        "revision": "5395006954bf298db652679b934ea5755ec17b1c"
+      },
+      "license": "Apache-2.0",
+      "pythonVersion": "3.13.14"
     }
   ]
 }

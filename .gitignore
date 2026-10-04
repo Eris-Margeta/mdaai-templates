@@ -1,0 +1,13 @@
+/*
+!/.gitignore
+!/README.md
+!/CONTRIBUTING.md
+!/LICENSE-NOTICES.md
+!/VERSION
+!/templates.json
+!/export-manifest.json
+!/templates/
+!/scripts/
+!/tests/
+!/.github/
+__pycache__/

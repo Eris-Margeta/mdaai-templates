@@ -13,7 +13,7 @@
       },
       "source": {
         "repository": "Eris-Margeta/mdaai-template-1",
-        "revision": "f9351ffbb8bb8b271b23ecc3ad5cee17f5b33825"
+        "revision": "687ca18b323058128ee18cfb3989bcdfb5513abf"
       },
       "status": "review-before-adoption",
       "complete": false,
@@ -435,8 +435,8 @@
         },
         {
           "path": "templates/mdaai-1/README.md",
-          "sha256": "473fdedbda2edded0ef68e491c3e33b71f36e11d72324bdbc7cedb284f5d36c2",
-          "size": 1250,
+          "sha256": "bb87138b8a3fc0a98b8e3333eae642e68925bcc6f5c7f77883746d55ee66d432",
+          "size": 1270,
           "role": "required"
         },
         {
@@ -565,7 +565,7 @@
       },
       "source": {
         "repository": "Eris-Margeta/mdaai-template-2",
-        "revision": "2b0ee25751edfc3368aef9cc0cce58712bf43e93"
+        "revision": "4c3e8994ea88312b5986531c8528d70a6b7470e6"
       },
       "status": "review-before-adoption",
       "complete": false,
@@ -651,8 +651,8 @@
         },
         {
           "path": "templates/mdaai-2/README.md",
-          "sha256": "c703ebf558d73fbdb5d04ff59c42331d616fae9454c81c0640706d802eaffabb",
-          "size": 1328,
+          "sha256": "043a8bb4af53b98b04e8360fe9d25c623129a6f4de6b27a93b8f54058a6f423d",
+          "size": 1348,
           "role": "required"
         },
         {

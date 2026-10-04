@@ -1,8 +1,16 @@
 # mdaai-templates
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/logo-white.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand/logo-black.svg">
+  <img alt="MDAAI coiled guardian emblem" src="assets/brand/logo-black.svg" width="112" height="112">
+</picture>
+
+For any agent system, point its entry instructions to the nearest AGENTS.md. Applicable parent and scoped governance files are cumulative.
+
 ![Catalog checks](https://github.com/Eris-Margeta/mdaai-templates/actions/workflows/catalog.yml/badge.svg)
 
-Literal, versioned governance-file bundles by **Eris Margeta Kurdali**: **MDAAI 1.0 first-generation family** and **MDAAI 2.0 portable core**. Private source projects and their Git histories are not published here.
+Reviewed, versioned governance-file bundles by **Eris Margeta Kurdali**: **MDAAI 1.0 first-generation family** and **MDAAI 2.0 portable core**. Private source projects and their Git histories are not published here.
 
 ## Protocol ≠ template
 
@@ -24,7 +32,7 @@ Protocol → Template files → Repository → Review → Template revision
 ```text
 templates/
 ├── mdaai-1/
-│   ├── AGENTS.md, CLAUDE.md, project-meta.yaml, LICENSE
+│   ├── AGENTS.md, project-meta.yaml, LICENSE
 │   ├── PROJECT-INTERNAL/
 │   │   ├── GOVERNANCE/         instructions and protocols
 │   │   ├── MANAGEMENT/         project scope and metadata
@@ -34,13 +42,13 @@ templates/
 │   │   └── ARCHITECTURE/, GUIDES/, KNOWLEDGE/, SCRATCH/
 │   └── .template/, docs/       inherited tooling and doc scaffolds
 └── mdaai-2/
-    ├── AGENTS.md, CLAUDE.md
+    ├── AGENTS.md
     └── PROJECT-INTERNAL/
         ├── GOVERNANCE/        AUTHORITY, ENGINEERING, EVIDENCE, REASONING, RECORDS
         └── MANAGEMENT/        PROJECT-ELABORATION.md and TASKS.json
 ```
 
-In the first generation, a task follows authorized scope → applicable lifecycle rules → Work Order and registry → verification → completion and any triggered checkpoint. In v2 it follows bounded scope → stable task row → relevant checks/evidence → truthful result. Durable v2 records are conditional, not a per-edit ritual. Language doctrines, multi-agent coordination, diagnostics and milestones apply when relevant; optional compatibility pointers and tooling do not create new authority.
+In the first generation, a task follows authorized scope → applicable lifecycle rules → Work Order and registry → verification → completion and any triggered checkpoint. In v2 it follows bounded scope → stable task row → relevant checks/evidence → truthful result. Durable v2 records are conditional, not a per-edit ritual. Language doctrines, multi-agent coordination, diagnostics and milestones apply when relevant; optional tooling does not create new authority.
 
 ## Adopt manually
 
@@ -55,10 +63,12 @@ Blank registries, bracketed text and example links are **uninitialized scaffolds
 ## Provenance and honest limitations
 
 - First-generation source: `Eris-Margeta/monorepo-template`, commit `ec57688e48f8ad12e60785173956d50386fee6b8`. `VERSION` says **1.0.0**, `AI-INSTRUCTIONS.md` says **1.7**, and supporting protocols have separate labels. “MDAAI 1.0” names the family, **not** a pristine original v1.0 release. The initial `d118cd1` authored blank registry and Elaboration replace later source-instance history, explicitly recorded in [export-manifest.json](export-manifest.json).
-- MDAAI 2.0 source: `Eris-Margeta/MDAAI-2-0`, commit `5395006954bf298db652679b934ea5755ec17b1c`. The six authored core files are supplied; only the root's laboratory-specific workspace/tool/check paragraph is made portable. Project Elaboration and TASKS are deliberately fresh project-owned scaffolds per the source adoption procedure. Laboratory validators, dashboards, research, rollout ADRs and execution history are excluded; no automatic rollout implementation is claimed.
+- MDAAI 2.0 source: `Eris-Margeta/MDAAI-2-0`, commit `5395006954bf298db652679b934ea5755ec17b1c`. The six authored core files are supplied; the root's laboratory-specific workspace/tool/check paragraph is made portable and provider-neutral entry guidance makes cumulative governance explicit. Project Elaboration and TASKS are deliberately fresh project-owned scaffolds per the source adoption procedure. Laboratory validators, dashboards, research, rollout ADRs and execution history are excluded; no automatic rollout implementation is claimed.
 - Literal first-generation inconsistencies remain visible: `AI-INSTRUCTIONS.md` refers to `PROJECT-DEVELOPMENT-ELABORATION.md` and `GUIDES/CHECKPOINT-PROTOCOL.md`, while supplied owners are `MANAGEMENT/PROJECT-ELABORATION.md` and `GOVERNANCE/CHECKPOINT-PROTOCOL.md`. Work Order immutability versus active lifecycle wording also requires reconciliation. No fake duplicate authority files were invented to hide this.
 - Inherited documentation examples reference future project pages. The exact [checked link-gap inventory](tests/known-source-link-gaps.json) records them. New unresolved links fail validation; existing examples are not presented as configured documentation.
 - Every payload's source path/revision/hash, destination hash/size and adaptation reason is recorded. Exclusions are explicit. Source hashes remain useful when source access is restricted; downloading this public catalog requires no source access.
+
+The original MDAAI emblem is included at `assets/brand/` in both canonical templates and this catalog. README pictures select white for dark themes, black for light themes, with black fallback. The reviewed SVGs are copied without geometry changes. Artwork entries record measured source/destination hashes; a null historical source revision honestly denotes newly authored staged artwork without a prior Git commit. Canonical public revisions remain immutable catalog pins. Root artwork copies are separately recorded in the export manifest's `catalogAssets`.
 
 Manifest entries deliberately use `complete: false` and `status: review-before-adoption`: export integrity is verified, completed downstream configuration is not.
 

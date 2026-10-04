@@ -9,6 +9,7 @@ def validate_registration(t):
  assert t["license"]=="Apache-2.0" and t["pythonVersion"]=="3.13.14"
  assert len({e["path"] for e in t["files"]})==len(t["files"])
  for e in t["files"]:
+  assert Path(e["path"]).name.casefold() != "claude.md"
   assert e["path"].startswith("templates/"+t["id"]+"/") and ".." not in Path(e["path"]).parts
   assert re.fullmatch("[0-9a-f]{64}",e["sha256"]) and 0<=e["size"]<=1000000
  return True

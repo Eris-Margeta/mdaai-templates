@@ -13,6 +13,8 @@ def safe_path(root, name):
     p = PurePosixPath(name)
     if not isinstance(name, str) or '\\' in name or p.is_absolute() or '..' in p.parts or str(p) != name:
         raise ValueError('unsafe path')
+    if p.name.casefold() == 'claude.md':
+        raise ValueError('provider-specific entry payload is not allowed')
     if len(p.parts) < 3 or p.parts[:2] not in [('templates', 'mdaai-1'), ('templates', 'mdaai-2')]:
         raise ValueError('path outside allowlisted template')
     target = root
@@ -78,7 +80,14 @@ def validate(root=ROOT):
             e = entries[name]
             assert e['sha256'] == file['sha256'] and e['size'] == file['size']
             assert re.fullmatch('[0-9a-f]{64}', e['sourceSha256'])
-            assert re.fullmatch('[0-9a-f]{40}', e['sourceRevision'])
+            if e['sourceRevision'] is None:
+                assert name.removeprefix('templates/' + template['id'] + '/') in {
+                    'assets/brand/logo-black.svg', 'assets/brand/logo-white.svg'}
+                assert e['sourcePath'] == 'brand-staging/' + Path(name).name
+                assert e['sourceOrigin'] == 'owner-authorized original MDAAI artwork, reviewed 2026-10-04; staged source has no Git revision'
+                assert e['sourceSha256'] == e['sha256']
+            else:
+                assert re.fullmatch('[0-9a-f]{40}', e['sourceRevision'])
             if e['transformation'] == 'none':
                 assert e['sourceSha256'] == e['sha256']
             assert not re.search(rb'/(?:Users|home)/[^\s/]+/|gh[pousr]_[A-Za-z0-9]{20,}|-----BEGIN [^-]*PRIVATE KEY', b)
@@ -89,6 +98,18 @@ def validate(root=ROOT):
             actual.add(p.relative_to(root).as_posix())
     assert seen == actual == set(entries)
     assert sum(e['size'] for e in entries.values()) <= 5_000_000
+    assets = provenance['catalogAssets']
+    assert [a['path'] for a in assets] == ['assets/brand/logo-black.svg', 'assets/brand/logo-white.svg']
+    for asset in assets:
+        target = root / asset['path']
+        assert not target.is_symlink()
+        b = target.read_bytes()
+        assert len(b) == asset['size'] and hashlib.sha256(b).hexdigest() == asset['sha256']
+        assert asset['sourceRepository'] == catalog['templates'][0]['source']['repository']
+        assert asset['sourceRevision'] == catalog['templates'][0]['source']['revision']
+        assert asset['sourcePath'] == asset['path']
+        assert asset['sourceSha256'] == asset['sha256']
+        assert b == (root / 'templates/mdaai-1' / asset['path']).read_bytes()
     expected = json.loads((root / 'tests/known-source-link-gaps.json').read_text())
     assert link_inventory(root, catalog) == expected, 'New unresolved source links; review and document, never silently waive'
     v2 = root / 'templates/mdaai-2/PROJECT-INTERNAL/MANAGEMENT/TASKS.json'

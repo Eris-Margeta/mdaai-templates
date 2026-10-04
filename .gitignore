@@ -18,3 +18,10 @@ __pycache__/
 !/LICENSE-NOTICES.md
 !/licenses/
 !/licenses/**
+
+!/assets/
+/assets/*
+!/assets/brand/
+/assets/brand/*
+!/assets/brand/logo-black.svg
+!/assets/brand/logo-white.svg

@@ -16,3 +16,8 @@ class AdmissionTests(unittest.TestCase):
  def test_bad_hash(self):
   t=self.entry();t['files'][0]['sha256']='invalid'
   with self.assertRaises(AssertionError):validate_registration(t)
+
+ def test_no_provider_entry_payload(self):
+  for name in ('CLAUDE.md', 'claude.MD', 'nested/ClAuDe.Md'):
+   t=self.entry();t['files'][0]['path']='templates/mdaai-1/'+name
+   with self.subTest(name=name), self.assertRaises(AssertionError):validate_registration(t)

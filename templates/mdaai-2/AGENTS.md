@@ -1,5 +1,7 @@
 # MDAAI 2.0 operating contract
 
+For any agent system, point its entry instructions to the nearest AGENTS.md. Applicable parent and scoped governance files are cumulative.
+
 This package governs only this folder until another repository explicitly adopts it. The nearest applicable `AGENTS.md` and higher-level operator instructions still apply. Read this file, the assigned task in [the task registry](PROJECT-INTERNAL/MANAGEMENT/TASKS.json), and only the named relevant references. Do not scan parent or unrelated projects unless asked.
 
 | Rule | Contract |

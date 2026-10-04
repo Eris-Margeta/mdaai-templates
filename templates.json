@@ -13,7 +13,7 @@
       },
       "source": {
         "repository": "Eris-Margeta/mdaai-template-1",
-        "revision": "687ca18b323058128ee18cfb3989bcdfb5513abf"
+        "revision": "15b1842450919200766ad068fe1ad770bd174143"
       },
       "status": "review-before-adoption",
       "complete": false,
@@ -63,8 +63,8 @@
         },
         {
           "path": "templates/mdaai-1/.template/scripts/sync-downstream.sh",
-          "sha256": "77c36f4145c3a72bc0c3083d562de931c0613109c183e8db0ccc74b9f811272f",
-          "size": 6293,
+          "sha256": "bbe781b5541be9ed6effa70087b580c9c21deeede511271bf7d8659382a6fb58",
+          "size": 6279,
           "role": "optional"
         },
         {
@@ -75,26 +75,20 @@
         },
         {
           "path": "templates/mdaai-1/.template/scripts/validate.sh",
-          "sha256": "26c691a363f5b64fdb877789b12e78b7788dad22a678d093aef1d4beddddf45a",
-          "size": 8084,
+          "sha256": "7236ca6e71f519be3991376583f59b12ce812a096d441c90d245a18e793823ba",
+          "size": 8050,
           "role": "optional"
         },
         {
           "path": "templates/mdaai-1/.template/sync-manifest.yaml",
-          "sha256": "afb06ee6f171b01ebdeb057c8368743d6e903b559002e6594828db7aa93f8db5",
-          "size": 5504,
+          "sha256": "eaf7aac67b32e5be28e01772ce84467474d89f2368ae573896c4430d3c895645",
+          "size": 5488,
           "role": "required"
         },
         {
           "path": "templates/mdaai-1/AGENTS.md",
-          "sha256": "d9087e12d0f79ea8e87c2c147a1d0a5907579c1854e71ffc49f3533096801982",
-          "size": 8114,
-          "role": "required"
-        },
-        {
-          "path": "templates/mdaai-1/CLAUDE.md",
-          "sha256": "eba8f227df0b82c478ac75f0c22054d8ec9658108d6d907b025d64153eb4d8aa",
-          "size": 389,
+          "sha256": "26d90696832acef61d428f68931f483d5efe1f4ac8095c8329aa4afea388251a",
+          "size": 8068,
           "role": "required"
         },
         {
@@ -435,14 +429,14 @@
         },
         {
           "path": "templates/mdaai-1/README.md",
-          "sha256": "bb87138b8a3fc0a98b8e3333eae642e68925bcc6f5c7f77883746d55ee66d432",
-          "size": 1270,
+          "sha256": "b608797f7cd530ca6b138abd974fee10e88d4d9afbc972f26d272e87339bf1b7",
+          "size": 1705,
           "role": "required"
         },
         {
           "path": "templates/mdaai-1/README.source.md",
-          "sha256": "91159c3f5d7b68929fc97e33be0a60210a2b20ab8c80c66e7b3b6268cbaa478a",
-          "size": 8504,
+          "sha256": "439eba8a31732b688df335cceabbb18f4e8b6f7331bfb3f47d2e35a1e3252f9d",
+          "size": 8427,
           "role": "required"
         },
         {
@@ -456,6 +450,18 @@
           "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
           "size": 6,
           "role": "required"
+        },
+        {
+          "path": "templates/mdaai-1/assets/brand/logo-black.svg",
+          "sha256": "cef322e1bfb791257622a4dfddbdbdd5036e1f2ba6ad50c757b6707f193d9901",
+          "size": 983,
+          "role": "optional"
+        },
+        {
+          "path": "templates/mdaai-1/assets/brand/logo-white.svg",
+          "sha256": "11af95fd5bfcfae955139d6b44aff606798bcf99dc0e2147bc2c1d852c700b8d",
+          "size": 983,
+          "role": "optional"
         },
         {
           "path": "templates/mdaai-1/docs/.templates/api-endpoint.md",
@@ -565,7 +571,7 @@
       },
       "source": {
         "repository": "Eris-Margeta/mdaai-template-2",
-        "revision": "4c3e8994ea88312b5986531c8528d70a6b7470e6"
+        "revision": "a565beb7542288fbe8091ba30f4c2ffe480a9b67"
       },
       "status": "review-before-adoption",
       "complete": false,
@@ -579,15 +585,9 @@
         },
         {
           "path": "templates/mdaai-2/AGENTS.md",
-          "sha256": "bf75a08e55483da5c3bb517947daf219e6859ce6fd977c99139a4e4704bb6022",
-          "size": 3118,
+          "sha256": "2c0afa6c1c257669454ec5ac8cf962d2d7c774d476859bc1a06e78e8b2fbd236",
+          "size": 3258,
           "role": "required"
-        },
-        {
-          "path": "templates/mdaai-2/CLAUDE.md",
-          "sha256": "d830177eb8e9b6cb9d77ca23cc1457e03361ebee774988d3b1b554faa4e02553",
-          "size": 126,
-          "role": "optional"
         },
         {
           "path": "templates/mdaai-2/CONTRIBUTING.md",
@@ -651,9 +651,21 @@
         },
         {
           "path": "templates/mdaai-2/README.md",
-          "sha256": "043a8bb4af53b98b04e8360fe9d25c623129a6f4de6b27a93b8f54058a6f423d",
-          "size": 1348,
+          "sha256": "f6932283072f1dd11070886e9b1372dc3479b940da7ec061ba252a7a4c0d2baf",
+          "size": 1783,
           "role": "required"
+        },
+        {
+          "path": "templates/mdaai-2/assets/brand/logo-black.svg",
+          "sha256": "cef322e1bfb791257622a4dfddbdbdd5036e1f2ba6ad50c757b6707f193d9901",
+          "size": 983,
+          "role": "optional"
+        },
+        {
+          "path": "templates/mdaai-2/assets/brand/logo-white.svg",
+          "sha256": "11af95fd5bfcfae955139d6b44aff606798bcf99dc0e2147bc2c1d852c700b8d",
+          "size": 983,
+          "role": "optional"
         },
         {
           "path": "templates/mdaai-2/licenses/legacy-MIT.txt",

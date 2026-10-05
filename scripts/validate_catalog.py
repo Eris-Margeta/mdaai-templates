@@ -80,16 +80,12 @@ def validate(root=ROOT):
             e = entries[name]
             assert e['sha256'] == file['sha256'] and e['size'] == file['size']
             assert re.fullmatch('[0-9a-f]{64}', e['sourceSha256'])
-            if e['sourceRevision'] is None:
-                assert name.removeprefix('templates/' + template['id'] + '/') in {
-                    'assets/brand/logo-black.svg', 'assets/brand/logo-white.svg'}
-                assert e['sourcePath'] == 'brand-staging/' + Path(name).name
-                assert e['sourceOrigin'] == 'owner-authorized original MDAAI artwork, reviewed 2026-10-04; staged source has no Git revision'
-                assert e['sourceSha256'] == e['sha256']
-            else:
-                assert re.fullmatch('[0-9a-f]{40}', e['sourceRevision'])
-            if e['transformation'] == 'none':
-                assert e['sourceSha256'] == e['sha256']
+            assert e['sourceRepository'] == template['source']['repository']
+            assert e['sourceRevision'] == template['source']['revision']
+            assert e['sourcePath'] == name.removeprefix('templates/' + template['id'] + '/')
+            assert e['sourceSha256'] == e['sha256']
+            assert e['transformation'] == 'none'
+            assert isinstance(e['upstreamProvenance'], dict)
             assert not re.search(rb'/(?:Users|home)/[^\s/]+/|gh[pousr]_[A-Za-z0-9]{20,}|-----BEGIN [^-]*PRIVATE KEY', b)
     actual = set()
     for p in (root / 'templates').rglob('*'):
@@ -115,7 +111,7 @@ def validate(root=ROOT):
     v2 = root / 'templates/mdaai-2/PROJECT-INTERNAL/MANAGEMENT/TASKS.json'
     assert json.loads(v2.read_text()) == {'schemaVersion': 1, 'taskPrefix': 'APP', 'tasks': []}
     v1 = json.loads((root / 'templates/mdaai-1/PROJECT-INTERNAL/WORK-ORDERS/registry.json').read_text())
-    assert not v1['workOrders'] and not v1['reservations'] and v1['nextSequence'] == 1
+    assert not v1['workOrders'] and not v1['sequenceReservations'] and not v1['agents'] and v1['nextSequence'] == 1
     return {'templates': len(catalog['templates']), 'payloadFiles': len(seen), 'bytes': sum(e['size'] for e in entries.values()), 'documentedSourceLinkGaps': len(expected)}
 
 if __name__ == '__main__':

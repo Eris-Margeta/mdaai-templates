@@ -19,3 +19,7 @@ Development and CI pin: Python **3.13.14**, read from `.python-version`. Catalog
 Validate: `python scripts/validate_template.py`; `python -m unittest discover -s tests -v`.
 
 Propose changes here first. Catalog registration is a separately reviewed PR to https://github.com/Eris-Margeta/mdaai-templates with immutable commit and hashes. Website: https://www.mdaai.internet.technology/templates/ . Original per-file provenance and adaptations: `export-manifest.json`.
+
+## Independent portable release identity
+
+Named template **MDAAI 2.0**, portable release **2.0.1** (RELEASE). `TEMPLATE-IDENTITY.json` owns this independently chosen identity; it is not inherited automatically from original source VERSION 2.0.0 or the standalone protocol. The earlier portable export had no VERSION file and used an upstream-derived catalog label. This metadata-only correction does not export private runtime/history or change governance semantics. The public package commit identifies this release; catalog admission and downstream adoption remain separate.

@@ -69,6 +69,22 @@ class CatalogTests(unittest.TestCase):
             p.write_text(json.dumps(v))
         self.mutate(change)
 
+    def test_current_source_pin_mismatch(self):
+        def change(root):
+            p = root / 'export-manifest.json'
+            v = json.loads(p.read_text())
+            v['files'][0]['sourceRevision'] = '0' * 40
+            p.write_text(json.dumps(v))
+        self.mutate(change)
+
+    def test_null_current_artwork_revision_rejected(self):
+        def change(root):
+            p = root / 'export-manifest.json'
+            v = json.loads(p.read_text())
+            next(e for e in v['files'] if e['path'].endswith('/assets/brand/logo-black.svg'))['sourceRevision'] = None
+            p.write_text(json.dumps(v))
+        self.mutate(change)
+
     def test_readme_theme_logos(self):
         import xml.etree.ElementTree as ET
         readme = (ROOT / 'README.md').read_text()
